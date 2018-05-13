@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: Novito; /* имя шрифта для CSS правил */
     src: local("Novito"), /* проверяем наличие шрифта в ОС пользователя */
@@ -67,4 +68,75 @@
 
 .topmenu a { color:#fff; }
 .topmenu a:visited { color:#fff; }
+=======
+@font-face {
+    font-family: Novito; /* имя шрифта для CSS правил */
+    src: local("Novito"), /* проверяем наличие шрифта в ОС пользователя */
+         url(fonts/Novito.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
+    @font-face {
+    font-family: Bukvica; /* имя шрифта для CSS правил */
+    src: local("Bukvica"), /* проверяем наличие шрифта в ОС пользователя */
+         url(fonts/bukvica.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
+  @font-face {
+    font-family: Fita_Vjaz; /* имя шрифта для CSS правил */
+    src: local("Fita_Vjaz"), /* проверяем наличие шрифта в ОС пользователя */
+         url(fonts/Fita_Vjaz.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
+    body {
+    padding: 5px;
+    margin: 0;
+	background-color: #f2eca9;
+  }
+  
+ section {
+	 font-family: Novito,arial;
+	 font-size:200%;
+	 color: #d88a02;
+ }
+   a {
+    text-decoration: none;
+    color: white;
+  }
+  .button {
+  position: fixed;
+  right:5px;
+  top:5px;
+  cursor: pointer;
+}
+.slider {
+  position: fixed;
+  right:50vw;
+  bottom:5px;
+  cursor: pointer;
+}
+
+.menu {
+  z-index: 10;
+  position:fixed;
+  right: 20px;
+  top:110px;
+  font-family: Novito,arial;
+  font-size:150%;
+  text-align: center;
+}
+.menu ul {
+      margin: 0;
+      list-style: none;
+      padding-left: 20px;
+      display: none;
+    /*  background-color: #a8b875; */
+    }
+.topmenu {
+  background: url(../images/submenu1.png) center / cover;
+}
+
+.menu.open ul {
+      display: block;
+}
+
+.topmenu a { color:#fff; }
+.topmenu a:visited { color:#fff; }
+>>>>>>> 47c394e0d140ac608cf84783037dc4f36ae002d6
 .topmenu a:hover { color:#f5433c; }
