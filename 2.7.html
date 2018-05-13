@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle2.css">
+<title> Page </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; <br /><br /></a></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/2/8.jpg" width="45%" align="left" vspace="5" hspace="5" >
+ <b>ЦЕРКОВЬ СВЯТОГО ВЕЛИКОМУЧЕНИКА ГЕОРГИЯ ПОБЕДОНОСЦА</b> -- КАМЕННЫЙ ХРАМ XVII ВЕКА 
+ С КОЛОКОЛЬНЕЙ СЕРЕДИНЫ XVI ВЕКА НА ТЕРРИТОРИИ МУЗЕЯ-ЗАПОВЕДНИКА КОЛОМЕНСКОЕ. РАСПОЛОЖЕН
+ В РАЙОНЕ НАГАТИНСКИЙ ЗАТОН ЮЖНОГО АДМИНИСТРАТИВНОГО ОКРУГА ГОРОДА МОСКВЫ. ПАМЯТНИК РУССКОГО ЗОДЧЕСТВА.</p>
+<p> 
+ПО СВЕДЕНИЯМ РУССКИХ ИСТОРИКОВ А. Н. КОРСАКОВА И Ю. И. ШАМУРИНА, ЦЕРКОВЬ ГЕОРГИЯ 
+ПОБЕДОНОСЦА БЫЛА ОСВЯЩЕНА В 1678 ГОДУ. В 1840—1842 ГОДАХ ДЕРЕВЯННЫЕ И ЧАСТЬ КАМЕННЫХ СТЕН 
+ЦЕРКВИ БЫЛИ РАЗОБРАНЫ. НА МЕСТЕ ДЕРЕВЯННОЙ ТРАПЕЗНОЙ КАК ПРИСТРОЙКА К ДРЕВНЕЙ ГЕОРГИЕВСКОЙ 
+КОЛОКОЛЬНЕ ПО ПРОЕКТУ Е. Д. ТЮРИНА БЫЛА ВОЗВЕДЕНА ЦЕРКОВЬ СВЯТОГО ГЕОРГИЯ ПОБЕДОНОСЦА.</p>
+<p>
+В ХОДЕ ЭТОЙ РЕКОНСТРУКЦИИ ОБЛИК ДРЕВНИХ СООРУЖЕНИЙ БЫЛ ЗНАЧИТЕЛЬНО ИСКАЖЁН. 
+ПОД ШТУКАТУРКУ БЫЛ СРУБЛЕН ВЕСЬ НАРУЖНЫЙ ДЕКОР И РАСТЁСАНЫ ОКОННЫЕ ПРОЁМЫ. С 
+ЗАПАДНОЙ СТОРОНЫ БЫЛА ВЫСТРОЕНА НОВАЯ БОЛЬШАЯ КИРПИЧНАЯ ТРАПЕЗНАЯ. ВНУТРИ СТОЛПА
+ КОЛОКОЛЬНИ БЫЛО СДЕЛАНО НИКОГДА ПРЕЖДЕ НЕ СУЩЕСТВОВАВШЕЕ СВОДЧАТОЕ ПЕРЕКРЫТИЕ. </p>
+<p>
+РАБОТЫ ПО ВОССТАНОВЛЕНИЮ ПЕРВОНАЧАЛЬНОГО ОБЛИКА ЦЕРКВИ НАЧАЛИСЬ В 1920-Х ГОДАХ 
+ПО ИНИЦИАТИВЕ П. Д. БАРАНОВСКОГО. В ХОДЕ РЕСТАВРАЦИИ БЫЛИ РАЗОБРАНЫ ВСЕ ПОЗДНИЕ 
+ПРИСТРОЙКИ ЗА ИСКЛЮЧЕНИЕМ ОДНОЭТАЖНОЙ ПАЛАТЫ XVII ВЕКА. КОЛОКОЛЬНЕ В ОСНОВНОМ ВЕРНУЛИ 
+ПЕРВОНАЧАЛЬНЫЙ ОБЛИК. В ГОДЫ ВЕЛИКОЙ ОТЕЧЕСТВЕННОЙ ВОЙНЫ РЕСТАВРАЦИЯ БЫЛА ПРЕРВАНА И ЗАВЕРШЕНА
+ В 1966—1967 ГОДАХ ПОД РУКОВОДСТВОМ Н. Н. СВЕШНИКОВА. В ТРАПЕЗНОЙ ДОЛГОЕ ВРЕМЯ ХРАНИЛИСЬ ФОНДЫ МУЗЕЯ.</p>
+<p>
+В 2000 ГОДУ ПОСЛЕ ОСВЯЩЕНИЯ ТРАПЕЗНАЯ ПРЕВРАТИЛАСЬ В ХРАМ СВЯТОГО ГЕОРГИЯ. В 2004—2006 ГОДАХ В 
+ЦЕРВКИ БЫЛА ВЫЯВЛЕНА СОЗДАННАЯ В XIX ВЕКЕ СЛОЖНАЯ КАЛОРИФЕРНАЯ СИСТЕМА ОТОПЛЕНИЯ ЗДАНИЯ. ТОГДА ЖЕ 
+БЫЛИ ПРОВЕДЕНЫ РАБОТЫ ПО ВОССТАНОВЛЕНИЮ ФРАГМЕНТОВ МАСЛЯНОЙ ЖИВОПИСИ. В 2007 ГОДУ В ЦЕРКВИ УСТАНОВЛЕН ИКОНОСТАС.</p>
+<p>
+В ХРАМЕ РАЗМЕЩАЕТСЯ ВЫСТАВКА МУЗЕЯ ДРЕВНИЙ ХРАМ СВЯТОГО ГЕОРГИЯ, СОДЕРЖАЩАЯ ИКОНЫ, СТАРОПЕЧАТНЫЕ КНИГИ, 
+РУКОПИСНЫЕ ДОКУМЕНТЫ, А ТАКЖЕ ОБРАЗЦЫ ЛИЦЕВОГО ШИТЬЯ И РЕЗЬБЫ ПО ДЕРЕВУ, ИЗРАЦЫ, АРХИТЕКТУРНУЮ ГРАФИКУ 
+И ФОТОГРАФИИ XIX—XX ВЕКОВ.</p>
+
+
+ 
+ </section>
+		
+		
+		
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>
