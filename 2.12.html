@@ -1,3 +1,100 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle2.css">
+<title> Казанский сад </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; <br /><br /></a></li>
+	</ul>
+		</div>
+ <section>
+ <p>
+ <b>КАЗАНСКИЙ САД В КОЛОМЕНСКОМ </b> – ЭТО ОДИН ИЗ САМЫХ КРАСИВЫХ И СТАРИННЫХ САДОВ. ОН СОСТОИТ И
+ ТРЕХ НЕБОЛЬШИХ САДОВ, КОТОРЫЕ СОХРАНИЛИСЬ ДО НАШИХ ДНЕЙ. В КАЗАНСКОМ САДУ ПРОИЗРАСТАЕТ ОГРОМНОЕ
+ КОЛИЧЕСТВО ПЛОДОВО-ЯГОДНЫХ ДЕРЕВЬЕВ. В СТАРИННЫЕ ВРЕМЕНА ФРУКТЫ, КОТОРЫЕ ВЫРАЩИВАЛИСЬ НА ДЕРЕВЬЯХ, 
+ ПОСТАВЛЯЛИСЬ НЕПОСРЕДСТВЕННО К СТОЛУ БОГАТЫХ ГОСПОД, ОДНАКО СО ВРЕМЕНЕМ САД ПРИШЕЛ В УПАДОК И БЫЛ СИЛЬНО ЗАПУЩЕН. </p>
+
+ <p>В 1997–1999 ГОДАХ В САДАХ БЫЛИ ПРОВЕДЕНЫ КРУПНЫЕ РЕСТАВРАЦИОННЫЕ РАБОТЫ И ПОЛНОСТЬЮ ВОССТАНОВЛЕНА 
+ ПЛАНИРОВКА СТАРИННОГО КАЗАНСКОГО САДА 1767 ГОДА. ВСЯ ТЕРРИТОРИЯ САДА РАЗБИТА ГРАВИЙНЫМИ ДОРОЖКАМИ. 
+ В ИХ ПЕРЕСЕЧЕНИИ РАСПОЛОЖЕНЫ ВЕЛИКОЛЕПНЫЕ ЦВЕТОЧНЫЕ КЛУМБЫ, ГДЕ ЛЕТОМ ВЫСАЖИВАЕТСЯ ОКОЛО 30 СОРТОВ 
+ РАЗНООБРАЗНЫХ ЦВЕТОВ. ЭТОТ ВЕЛИКОЛЕПНЫЙ САД ПОЛЬЗУЕТСЯ ОГРОМНОЙ ПОПУЛЯРНОСТЬЮ СРЕДИ ЗАРУБЕЖНЫХ ТУРИСТОВ
+ КАК ИСТОРИЧЕСКИ ЗНАЧИМАЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ.</p>
+
+ <p>ЯБЛОНЕВЫЕ САДЫ В КОЛОМЕНСКОМ ПОЯВИЛИСЬ ПОЧТИ ЧЕТЫРЕ ВЕКА НАЗАД. НА УЧАСТКАХ ПРАВИЛЬНОЙ ФОРМЫ РОСЛО
+ БОЛЕЕ 6000 ПЛОДОВЫХ ДЕРЕВЬЕВ. КРОМЕ ЯБЛОНЬ, В УСАДЬБЕ ВЫРАЩИВАЛИ ВИШНИ, ГРУШИ И СЛИВЫ, А ТАКЖЕ ЯГОДНЫЕ 
+ КУСТАРНИКИ И ОВОЩИ. НАИЛУЧШЕЕ ВРЕМЯ ДЛЯ ПОСЕЩЕНИЯ САДОВ - ПЕРВАЯ И ВТОРАЯ ДЕКАДА МАЯ, В ПЕРИОД БУРНОГО ЦВЕТЕНИЯ.</p>
+
+<p> В ЦАРСКИЕ ВРЕМЕНА В УСАДЬБЕ КОЛОМЕНСКОЕ БЫЛО ШЕСТЬ САДОВ: ТРИ ИЗ НИХ (СТАРЫЙ БОЛЬШОЙ, НОВЫЙ И КРАСНЫЙ) 
+ НЕ СОХРАНИЛИСЬ. В НАШЕ ВРЕМЯ МЫ МОЖЕМ НАСЛАЖДАТЬСЯ КРАСОТОЙ И ВЗДЫХАТЬ НЕЖНЕЙШИЙ АРОМАТ ЦВЕТУЩИХ ЯБЛОНЬ 
+ ТРЕХ САДОВ - КАЗАНСКОГО, ВОЗНЕСЕНСКОГО И ДЬЯКОВСКОГО.</p>
+
+ <p>КАЗАНСКИЙ САД РАСПОЛОЖЕН ЗА КАЗАНСКОЙ ЦЕРКОВЬЮ И СЛАВИЛСЯ ТЕМ, ЧТО ПЛОДЫ С ЕГО ДЕРЕВЬЕВ ШЛИ 
+ ИСКЛЮЧИТЕЛЬНО К ЦАРСКОМУ СТОЛУ. ДАЖЕ ПОСЛЕ ТОГО, КАК СТОЛИЦЕЙ РУССКОГО ГОСУДАРСТВА СТАЛ САНКТ-ПЕТЕРБУРГ,
+ ЯБЛОКИ И ГРУШИ ИЗ КОЛОМЕНСКОГО ПОСТАВЛЯЛИ НА ЦАРСКИЙ СТОЛ. ТАКЖЕ В ЭТОМ САДУ РОСЛИ ЕЩЕ ДВА ДЕРЕВА ГРЕЦКОГО ОРЕХА. </p>
+
+
+
+ 
+ </section>
+		
+		
+		
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>
+=======
 <!DOCTYPE html>
 
 <head>
@@ -92,3 +189,4 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
+>>>>>>> 47c394e0d140ac608cf84783037dc4f36ae002d6

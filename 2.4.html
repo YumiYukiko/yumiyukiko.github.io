@@ -1,3 +1,95 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle2.css">
+<title> Историческая территория дворца Алексея Михайловича </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; <br /><br /></a></li>
+	</ul>
+		</div>
+ <section>
+ <p>
+ В САМОМ ЦЕНТРЕ ГОСУДАРЕВА ДВОРА ПАРК, ВЕКОВЫЕ ЛИПЫ, И КАЖЕТСЯ, 
+ ЧТО ТАК БЫЛО ВСЕГДА. НО НА САМОМ ДЕЛЕ ДЕРЕВЬЯ ЭТИ – СРАВНИТЕЛЬНО МОЛОДЫ. 
+ ВЕДЬ ИМЕННО, ЗДЕСЬ, НА ЭТОМ САМОМ МЕСТЕ В XVII В. СТОЯЛ <b>ДЕРЕВЯННЫЙ ТЕРЕМНОЙ ДВОРЕЦ ЦАРЯ АЛЕКСЕЯ МИХАЙЛОВИЧА.</b> </p>
+ 
+ <p>ДВОРЕЦ АЛЕКСЕЯ МИХАЙЛОВИЧА НЕ БЫЛ СИММЕТРИЧНЫМ И ПОРАЖАЛ ВСЕХ И ПРИЧУДЛИВОСТЬЮ ФОРМ, 
+ И КРАСОТОЙ УБРАНСТВА. ДВОРЕЦ БЫЛ ТАК КРАСИВ, ЧТО ЧАСТО ИМЕННО В КОЛОМЕНСКОМ, А НЕ В КРЕМЛЕ, 
+ ЦАРЬ ПРИНИМАЛ ИНОЗЕМНЫХ ПОСЛОВ. И ОДИН ИЗ ЗАМОРСКИХ ГОСТЕЙ СРАВНИЛ ЦАРСКИЙ ТЕРЕМ С «ИГРУШКОЙ, 
+ ВЫНУТОЙ ИЗ ЛАРЦА». НО ДЕРЕВЯННОМУ ДВОРЦУ НЕ СУЖДЕНА БЫЛА ДОЛГАЯ ЖИЗНЬ. ПОСЛЕ СМЕРТИ АЛЕКСЕЯ МИХАЙЛОВИЧА 
+ ЕГО ДЕТИ ЛИШЬ ИЗРЕДКА ЗАЕЗЖАЛИ В ТАК ЛЮБИМУЮ ИХ ОТЦОМ УСАДЬБУ. А КОГДА ПЕТР I ПЕРЕНЕС СТОЛИЦУ В САНКТ-ПЕТЕРБУРГ,
+ ЦАРСКАЯ СЕМЬЯ ВОВСЕ ПЕРЕСТАЛА БЫВАТЬ В КОЛОМЕНСКОМ. И К СЕРЕДИНЕ XVIII В. ДВОРЕЦ СИЛЬНО ОБВЕТШАЛ.</p>
+ 
+<p>ДВОРЕЦ АЛЕКСЕЯ МИХАЙЛОВИЧА РАЗОБРАЛИ В 1767-М ПО УКАЗУ ЕКАТЕРИНЫ II. 
+НО ПЕРЕД ЭТИМ ВСЕ ТЩАТЕЛЬНО ОБМЕРИЛИ И ЗАРИСОВАЛИ. В XIX В. МАСТЕР-РЕЗЧИК СМИРНОВ 
+ВЫПОЛНИЛ ДЕРЕВЯННЫЙ МАКЕТ ДВОРЦА, КОТОРЫЙ ХРАНИТСЯ В МУЗЕЕ КОЛОМЕНСКОГО. </p>
+<p>
+СКАЗОЧНЫЙ ТЕРЕМ РУССКОГО ЦАРЯ ВОССОЗДАЛИ В 2010 Г, НО ДАЛЕКО ОТСЮДА. ЗА ГОЛОСОВЫМ ОВРАГОМ, 
+ПОДАЛЬШЕ ОТ ИСТОРИЧЕСКОГО ЯДРА ЗАПОВЕДНИКА И ПОБЛИЖЕ К КАШИРСКОМУ ШОССЕ.
+ </p> 
+
+
+ 
+ </section>
+		
+		
+		
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>
+=======
 <!DOCTYPE html>
 
 <head>
@@ -87,3 +179,4 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
+>>>>>>> 47c394e0d140ac608cf84783037dc4f36ae002d6

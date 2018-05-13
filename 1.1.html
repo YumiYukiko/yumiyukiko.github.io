@@ -1,3 +1,94 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle1.css">
+<title> Усадьба кузнеца </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; <br /><br /></a></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/1/1.jpg" width="45%" align="left" vspace="5" hspace="5">
+ 
+ <b>УСАДЬБА КУЗНЕЦА</b> НАХОДИТСЯ НА ТЕРРИТОРИИ ЭТНОГРАФИЧЕСКОГО ЦЕНТРА. 
+ НА ТЕРРИТОРИИ УСАДЬБЫ ДЛЯ ПОСЕЩЕНИЯ ОТКРЫТА ДЕЙСТВУЮЩАЯ КУЗНИЦА, 
+ В КОТОРОЙ ВОССОЗДАНО УСТРОЙСТВО НЕБОЛЬШОЙ УНИВЕРСАЛЬНОЙ КУЗНИЦЫ: 
+ ГОРН, СЛОЖЕННЫЙ ИЗ КАМНЕЙ ИЛИ КИРПИЧА С ЖЕЛЕЗНЫМ ВЫТЯЖНЫМ ЗОНТОМ , 
+ ДВУРОГАЯ НАКОВАЛЬНЯ, ТИСКИ И ИНСТРУМЕНТЫ: НЕСКОЛЬКО РУЧНИКОВ, КУВАЛДА, 
+ КЛЕЩИ С РАЗНЫМИ ГУБКАМИ, ЗУБИЛА. ПРИ ПОМОЩИ ЭТОГО НЕХИТРОГО ИНСТРУМЕНТА 
+ СОВРЕМЕННЫЕ ИСКУСНЫЕ МАСТЕРА НА ГЛАЗАХ ПОСЕТИТЕЛЕЙ СОЗДАДУТ УНИКАЛЬНЫЕ ОБРАЗЦЫ 
+ КУЗНЕЧНОГО ИСКУССТВА, КОТОРЫЕ ВСЕ ЖЕЛАЮЩИЕ СМОГУТ ПРИОБРЕСТИ В СУВЕНИРНОМ МАГАЗИНЕ МУЗЕЯ.</p>
+ <p>
+ В XIX – НАЧАЛЕ XX В. ОКРЕСТНОСТЯХ СЕЛА КОЛОМЕНСКОГО БЫЛО НЕСКОЛЬКО КУЗНИЦ. 
+ КУЗНЕЦЫ ИЗГОТОВЛЯЛИ СЕЛЬСКОХОЗЯЙСТВЕННЫЕ ОРУДИЯ И ДЕТАЛИ, ИНСТРУМЕНТЫ ДЛЯ СТОЛЯРНЫХ И 
+ ПЛОТНИЧНЫХ РАБОТ, ПРЕДМЕТЫ КРЕСТЬЯНСКОГО БЫТА: КОТЛЫ И СКОВОРОДЫ, ТАГАНЫ И УХВАТЫ, НОЖИ И НОЖНИЦЫ,
+ СВЕТЦЫ И ПОДСВЕЧНИКИ, ОКОВАННЫЕ МЕТАЛЛОМ СУНДУКИ. ТАКЖЕ В РУССКИХ ДЕРЕВНЯХ СЧИТАЛОСЬ, 
+ ЧТО КУЗНЕЦ МОЖЕТ НЕ ТОЛЬКО ВЫКОВАТЬ ПЛУГ ИЛИ ОКОВАТЬ СУНДУК, НО И ВРАЧЕВАТЬ БОЛЕЗНИ, УСТРАИВАТЬ СВАДЬБЫ</p>
+<p>
+В ДОМЕ КУЗНЕЦА РАЗВЕРНУТА ЭКСПОЗИЦИЯ, КОТОРАЯ ЗНАКОМИТ ПОСЕТИТЕЛЕЙ С ПРЕДМЕТАМИ ПОВСЕДНЕВНОГО 
+БЫТА ИЗ МЕТАЛЛА XVII – НАЧАЛА XX ВВ. И ОСОБЕННОСТЯМИ БЫТА РЕМЕСЛЕННИКА КОНЦА XIX – НАЧАЛА XX ВВ. В ПРИГОРОДЕ МОСКВЫ.</p>
+
+ 
+ </section>
+		
+		
+		
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>
+=======
 <!DOCTYPE html>
 
 <head>
@@ -86,3 +177,4 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
+>>>>>>> 47c394e0d140ac608cf84783037dc4f36ae002d6
