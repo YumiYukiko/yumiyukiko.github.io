@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle1.css">
+<title> Page </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; <br /><br /></a></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/1/2.1.jpg" width="45%" align="left" vspace="5" hspace="5" >
+ <b>УСАДЬБА КОЛОМЕНСКОГО КРЕСТЬЯНИНА </b> ЭТО ОДНА ИЗ СТАРИННЫХ УСАДЕБ РОССИИ. 
+ В ЕЕ КОМПЛЕКС ВХОДЯТ ОТДЕЛЬНЫЕ ХОЗЯЙСТВЕННЫЕ ПОСТРОЙКИ КРЕСТЬЯНСКОГО ДВОРА, ЖИЛОЙ ДОМ, 
+ ИЗБУШКА ДЛЯ ХРАНЕНИЯ ЗЕРНА, ОГОРОД И КОНЮШНЯ, В КОТОРОЙ СОДЕРЖАЛИ ЛОШАДЕЙ И КОРОВ. 
+ ЖИЛОЙ ДОМ БЫЛ ПОЛНОСТЬЮ ОТСТРОЕН ПО АРХИВНЫМ ДОКУМЕНТАМ И ФОТО КРЕСТЬЯНСКОЙ ИЗБЫ КОНЦА XIX - 
+ НАЧАЛА ХХ ВЕКОВ. ОБЩАЯ ПЛОЩАДЬ УСАДЬБЫ СОСТАВЛЯЕТ 0,18 ГЕКТАР. </p>
+ 
+ <p>НА ПРИМЕРЕ ОГОРОДА И САДА, РАЗБИТЫХ НА ТЕРРИТОРИИ ДВОРА, ПРЕДСТАВЛЕНЫ ОСНОВНЫЕ 
+ ЗЕМЛЕДЕЛЬЧЕСКИЕ ЗАНЯТИЯ КОЛОМЕНСКИХ КРЕСТЬЯН.ЖИЛОЙ ДОМ ВОССОЗДАН ПО СОХРАНИВШИМСЯ АРХИВНЫМ 
+ ДОКУМЕНТАМ И ФОТОГРАФИЯМ КРЕСТЬЯНСКОЙ ИЗБЫ КОНЦА ХIХ – НАЧАЛА ХХ В.В. ИЗ СЕЛА КОЛОМЕНСКОГО.
+ В ЭКСПОЗИЦИИ, НАХОДЯЩЕЙСЯ В ДОМЕ, НА ОСНОВЕ ПРЕДМЕТОВ БЫТА ВОССОЗДАНЫ ОБРАЗЫ ПОВСЕДНЕВНОЙ ЖИЗНИ 
+ КОЛОМЕНСКИХ КРЕСТЬЯН.В СЕЛЕ КОЛОМЕНСКОМ И ОКРЕСТНЫХ ДЕРЕВНЯХ И СЕЛАХ - ДЬЯКОВЕ, САДОВОЙ СЛОБОДЕ И 
+ ДР. – ОСНОВУ КРЕСТЬЯНСКОГО ХОЗЯЙСТВА СОСТАВЛЯЛИ ОГОРОДНИЧЕСТВО И САДОВОДСТВО. </p>
+ 
+<p><img src="images/1/2.2.jpg" width="45%" align="right" vspace="5" hspace="5" >
+КРЕСТЬЯНСКИЕ ХОЗЯЙСТВА В КОЛОМЕНСКОМ В ОСНОВНОМ БЫЛИ ЗАЖИТОЧНЫЕ. НА УСАДЬБАХ КРЕСТЬЯН 
+СТОЯЛИ ДОБРОТНЫЕ ДОМА И ХОЗЯЙСТВЕННЫЕ ПОСТРОЙКИ.В КОНЦЕ ХIХ – НАЧАЛЕ ХХ В.В. С ПРОНИКНОВЕНИЕМ 
+ГОРОДСКОЙ КУЛЬТУРЫ В КРЕСТЬЯНСКУЮ ЖИЗНЬ НАЧИНАЕТ ИЗМЕНЯТЬСЯ ТРАДИЦИОННАЯ ПЛАНИРОВКА И ИНТЕРЬЕР ЖИЛИЩА.
+ В БЫТ КРЕСТЬЯН СТАЛА ВХОДИТЬ ГОРОДСКАЯ МЕБЕЛЬ - КОМОДЫ, ГОРКИ, БУФЕТЫ, КРОВАТИ, СТУЛЬЯ, КРЕСЛА. УБРАНСТВО 
+ ИЗБЫ ПОПОЛНИЛОСЬ ЗЕРКАЛАМИ, ЧАСАМИ, ФОТОГРАФИЯМИ В РАМКАХ, ЧАЙНОЙ И СТОЛОВОЙ ФАРФОРОВОЙ И ФАЯНСОВОЙ ПОСУДОЙ.
+</p>
+<br>УСАДЬБУ ОКРУЖАЕТ ВЕЛИКОЛЕПНАЯ ЗЕЛЕНАЯ РАСТИТЕЛЬНОСТЬ, ЧТО ПРИДАЕТ ЕЙ ОСОБОЙ ИЗЫСКАННОСТИ. ПОСЕТИВ ТЕРРИТОРИЮ 
+УСАДЬБЫ, МОЖНО ОЗНАКОМИТЬСЯ С ОСОБЕННОСТЯМИ БЫТА И ДУХОВНОЙ ЖИЗНИ КРЕСТЬЯН СЕЛА КОЛОМЕНСКОЕ. ВНУТРИ ПОСТРОЕК 
+ПОЛНОСТЬЮ ВОССОЗДАНА МЕБЕЛЬ, ПОСУДА И СТОЛОВЫЕ ПРИБОРЫ, ЧТОБЫ ЛЮДИ МОГЛИ ПРОНИКНУТЬСЯ ДУХОМ КРЕСТЬЯНСКОЙ ЖИЗНИ. 
+НА СЕГОДНЯШНИЙ ДЕНЬ УСАДЬБА ПОСТОЯННО ОТКРЫТА ДЛЯ ПОСЕТИТЕЛЕЙ.
+
+
+ 
+ </section>
+		
+		
+		
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>

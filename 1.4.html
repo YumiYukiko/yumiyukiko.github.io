@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle1.css">
+<title> Page </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; <br /><br /></a></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/1/4.jpg" width="45%" align="left" vspace="5" hspace="5" >
+ <b>ЦЕРКОВЬ ГЕОРГИЯ ПОБЕДОНОСЦА </b>  — ПАМЯТНИК ДЕРЕВЯННОГО ЗОДЧЕСТВА РУССКОГО СЕВЕРА
+ В МОСКОВСКОМ МУЗЕЕ-ЗАПОВЕДНИКЕ «КОЛОМЕНСКОЕ». ПОСТРОЕНА В 1685 ГОДУ НА БЕРЕГУ РЕКИ ЁРГИ 
+ (СОВРЕМЕННАЯ АРХАНГЕЛЬСКАЯ ОБЛАСТЬ), СОХРАНИЛАСЬ В ПОЧТИ ОРИГИНАЛЬНОМ ОБЛИКЕ ДО НАЧАЛА XXI ВЕКА, 
+ В 2008—2011 РАЗОБРАНА, ПЕРЕВЕЗЕНА В МОСКВУ И ВОССТАНОВЛЕНА НА ТЕРРИТОРИИ КОЛОМЕНСКОГО. </p>
+ 
+ <p><b>ГЕОРГИЕВСКАЯ ЦЕРКОВЬ</b> — ПАМЯТНИК ТРАДИЦИОННОГО ДЕРЕВЯННОГО ЗОДЧЕСТВА ПОДВИНЬЯ XVII—XVIII ВВ. 
+ ПРЕДСТАВЛЯЕТ СОБОЙ ДВУХЪЯРУСНОЕ СООРУЖЕНИЕ ИЗ СОСНОВЫХ БРЁВЕН. ОСНОВНАЯ ЧАСТЬ — ЧЕТЫРЁХУГОЛЬНЫЙ СРУБ-ЧЕТВЕРИК, 
+ С МИНИАТЮРНЫМИ ПРОРЕЗЯМИ ДЛЯ ОКОН И С АЛТАРНОЙ ПЯТИГРАННОЙ ПРИСТРОЙКОЙ С ВОСТОКА. ПОД КРЫШЕЙ ЧЕТВЕРИКА ВИДЕН ПОЯС 
+ С ДЕКОРОМ, ГДЕ ПЕРВОНАЧАЛЬНО НА ДРЕВНИХ ДОСКАХ БЫЛА НАЧЕРТАНА КРАСКОЙ ДАТА ОСВЯЩЕНИЯ ХРАМА (АПРЕЛЬ 1688 ГОДА).
+ НА ОСНОВНОЙ ЧАСТИ УСТРОЕН ВЕРХНИЙ, ЗНАЧИТЕЛЬНО БОЛЕЕ УЗКИЙ ЧЕТВЕРИК С КРЫШЕЙ В ФОРМЕ БОЧКИ, УВЕНЧАННОЙ ТРЕМЯ СТОЯЩИМИ
+ В РЯД ГЛАВКАМИ С КРЕСТАМИ. АЛТАРНАЯ ПРИСТРОЙКА ТАКЖЕ УВЕНЧАНА КРЫШЕЙ-БОЧКОЙ С ГЛАВКОЙ. У ЗАПАДНОГО ФАСАДА ИМЕЕТСЯ КРЫТОЕ 
+ КРЫЛЬЦО С ЛЕСТНИЦЕЙ, ВЕДУЩЕЙ НА ВЕРХНИЙ (НАД ПОДКЛЕТОМ) ЯРУС ЗДАНИЯ. ТАМ ЖЕ К ФАСАДУ ПРИСТРОЕНА ГАЛЕРЕЯ-ПАПЕРТЬ НА КОНСОЛЯХ, 
+ НЕКОГДА ОГИБАВШАЯ ВЕСЬ ФАСАД ПО ПЕРИМЕТРУ. </p>
+ 
+<p>ПО ДОКУМЕНТАМ ВОЛОГОДСКОЙ ЕПАРХИИ ИЗВЕСТНО, ЧТО ГЕОРГИЕВСКАЯ ЦЕРКОВЬ БЫЛА ВОЗВЕДЕНА В 1685 ГОДУ НА СРЕДСТВА 
+ПРИХОЖАН. КРОМЕ НЕЁ, В СЕМЁНОВСКОЙ ИМЕЛАСЬ ЕЩЁ И ДЕРЕВЯННАЯ РОЖДЕСТВЕНСКАЯ ЦЕРКОВЬ, ПОСТРОЕННАЯ В XVII В.; 
+В ОТЛИЧИЕ ОТ ГЕОРГИЕВСКОЙ — ЗИМНЯЯ, ОТАПЛИВАЕМАЯ И С КОЛОКОЛЬНЕЙ. В 1720-Х ГОДАХ РОЖДЕСТВЕНСКАЯ ЦЕРКОВЬ СГОРЕЛА, 
+ПОЗЖЕ БЫЛА ОТСТРОЕНА ЗАНОВО, А ГЕОРГИЕВСКАЯ УЦЕЛЕЛА В ПЕРВОНАЧАЛЬНОМ ВИДЕ. ГЕОРГИЕВСКАЯ ЦЕРКОВЬ В ЭТОМ ОБЛИКЕ СОХРАНЯЛАСЬ 
+ВПЛОТЬ ДО НАЧАЛА XXI ВЕКА. В 1930-Х ГОДАХ СРЕДНЕПОГОСТСКИЕ ЦЕРКВИ БЫЛИ ЗАКРЫТЫ, ВНУТРЕННЕЕ УБРАНСТВО РАЗГРАБЛЕНО, ПОЗЖЕ В 
+РОЖДЕСТВЕНСКОЙ БЫЛА УСТРОЕНА ШКОЛА, В ГЕОРГИЕВСКОЙ — КЛУБ, ЗАТЕМ СКЛАД. ВО ВТОРОЙ ПОЛОВИНЕ XX ВЕКА ДЕРЕВНИ БЫВШЕГО ПРИХОДА 
+ПРАКТИЧЕСКИ ОПУСТЕЛИ. ОБЕ ЦЕРКВИ СТОЯЛИ ЗАБРОШЕННЫЕ И ОБВЕТШАЛИ. </p> 
+<p>С 2003 ГОДА СПЕЦИАЛИСТЫ МОСКОВСКОГО ОБЪЕДИНЁННОГО МУЗЕЯ-ЗАПОВЕДНИКА 
+НАЧАЛИ РАЗРАБОТКУ ПРОЕКТА РЕСТАВРАЦИИ НАХОДИВШЕЙСЯ К ТОМУ ВРЕМЕНИ ПОД УГРОЗОЙ РАЗРУШЕНИЯ ГЕОРГИЕВСКОЙ ЦЕРКВИ. ИНИЦИИРОВАЛ 
+ПРОЕКТ ХУДОЖНИК ИВАН ГЛАЗУНОВ, СЛУЧАЙНО ОБНАРУЖИВШИЙ НИКОМУ ДО ТОГО НЕ ИЗВЕСТНУЮ ЦЕРКОВЬ. В 2008 ХРАМ БЫЛ РАЗОБРАН И ПЕРЕВЕЗЁН 
+В МОСКВУ, В 2009 НАЧАЛИСЬ РАБОТЫ ПО РЕСТАВРАЦИИ ХРАМА И ВОССТАНОВЛЕНИЮ ЕГО НА ТЕРРИТОРИИ ПАРКА КОЛОМЕНСКОЕ, БЛИЗ КОМПЛЕКСА МУЗЕЯ
+ ДЕРЕВЯННОГО ЗОДЧЕСТВА, КОТОРЫЕ БЫЛИ ЗАВЕРШЕНЫ В 2011 ГОДУ
+
+
+ 
+ </section>
+		
+		
+		
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>
