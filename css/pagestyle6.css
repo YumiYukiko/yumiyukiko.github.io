@@ -17,17 +17,24 @@
     padding: 5px;
     margin: 0;
 	background-color: #f2eca9;
+	
   }
-  
- section {
-	 font-family: Novito,arial;
+  .bukvica {
+	  font-size: 500%
+	  font-family: Bukvica;
+  }
+section {
+ font-family: Novito,arial;
 	 font-size:200%;
-	 color: #d88a02;
- }
+	 color: #c42d20;
+}	
+
    a {
     text-decoration: none;
-    color: white;
   }
+ 
+  a:visited { color:#610231; }
+  a:hover { text-decoration: uderline;}
   .button {
   position: fixed;
   right:5px;
