@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle1.css">
+<title> Вознесенский сад </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; </a></li>
+				<li id="textred"> <a href="#"><img src="images/red.png"></a></li>
+		<li id="textviolet"> <a href="#"><img src="images/violet.png"></a></li>
+		<li id="textyellow"> <a href="#"><img src="images/yellow.png"></a><br><br></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/3/3.jpg" width="45%" align="left" vspace="5" hspace="5" >
+ <b>ВОЗНЕСЕНСКИЙ САД </B>- ОДИН ИЗ ДРЕВНЕЙШИХ САДОВ НА ТЕРРИТОРИИ МОСКВЫ. ОН ЯВЛЯЕТСЯ ЧАСТЬЮ БОЛЬШОГО 
+ ГОСУДАРЕВА САДА В КОЛОМЕНСКОМ, КОТОРЫЙ НАЗЫВАЛСЯ «СТАРЫМ» И ЗАНИМАЛ ПЛОЩАДЬ 21,8 ГА. 
+ВОЗНЕСЕНСКИЙ САД НАХОДИТСЯ В ЮГО-ВОСТОЧНОЙ ЧАСТИ УСАДЬБЫ. ЗДЕСЬ И В НАШЕ ВРЕМЯ РАСТЕТ БОЛЕЕ 900 ЯБЛОНЬ. 
+РЯДОМ РАСПОЛАГАЕТСЯ ЭКСПОЗИЦИЯ «УСАДЬБА ПАСЕЧНИКА» И АПТЕКАРСКИЙ ОГОРОД. </P>
+
+ <P>НА ТЕРРИТОРИИ ВОЗНЕСЕНСКОГО САДА СОХРАНИЛИСЬ ДРЕВНЕЙШИЕ КОЛОМЕНСКИЕ ДУБЫ (ВОЗРАСТ ОКОЛО 400 ЛЕТ). 
+В ПРЕДАНИЯХ ЭТИ ДУБЫ НАЗЫВАЮТ «ПЕТРОВСКИМИ». УЖЕ В XVIII В. СУЩЕСТВОВАЛА ЛЕГЕНДА, ЧТО ПОД СЕНЬЮ КОЛОМЕНСКИХ 
+ДУБОВ ОБУЧАЛСЯ ГРАМОТЕ ЦАРЕВИЧ ПЕТР АЛЕКСЕЕВИЧ, БУДУЩИЙ ИМПЕРАТОР ПЕТР ВЕЛИКИЙ.</P>
+
+ <P>В ВОЗНЕСЕНСКОМ САДУ, ОДНОМ ИЗ ШЕСТИ САДОВ КОЛОМЕНСКОГО, РОСЛИ НЕ ТОЛЬКО ТРАДИЦИОННЫЕ ДЛЯ СРЕДНЕЙ ПОЛОСЫ 
+РОССИИ ДЕРЕВЬЯ И КУСТАРНИКИ. ЗДЕСЬ ПРИЖИЛИСЬ И КЕДРЫ, ПИХТЫ, ГРЕЦКИЙ ОРЕХ И ДРУГИЕ ДИКОВИННЫЕ РАСТЕНИЯ ИЗ ДРУГИХ 
+КЛИМАТИЧЕСКИХ ЗОН.</P>
+
+ <P>ВОЗНЕСЕНСКИЙ САД - ЕСТЕСТВЕННАЯ «ЗЕЛЕНАЯ ЗАЩИТА» ЛАНДШАФТА МУЗЕЯ-ЗАПОВЕДНИКА ОТ ПРОНИКНОВЕНИЯ НА ТЕРРИТОРИЮ 
+ВЫХЛОПНЫХ ГАЗОВ. В 1999 - 2000 ГГ. В САДУ БЫЛИ ПРОЛОЖЕНЫ ГРАВИЙНЫЕ ДОРОЖКИ, СДЕЛАН ГАЗОН ПОД КРОНАМИ ЯБЛОНЬ, 
+УСТАНОВЛЕНЫ ФОНАРИ ОСВЕЩЕНИЯ.</P>
+
+ <P>ЗДЕСЬ ЖЕ НАХОДИТСЯ ДЕЙСТВУЮЩАЯ ПАСЕКА, И В ЛЕТНЕЕ ВРЕМЯ ПРОВОДЯТСЯ ЭКСКУРСИИ С ДЕМОНСТРАЦИЕЙ УСТРОЙСТВА УЛЬЯ И 
+РАССКАЗОМ О ПЧЕЛОВОДСТВЕ.</P>
+
+ <P>ВБЛИЗИ ВОЗНЕСЕНСКОГО САДА ПРЕДСТАВЛЕНА СВОЕОБРАЗНАЯ ЭКСПОЗИЦИЯ - АПТЕКАРСКИЙ ОГОРОД КАК НЕПРЕМЕННЫЙ 
+ЭЛЕМЕНТ САДОВОДСТВА XVII В. ЗДЕСЬ ВЫРАЩИВАЮТСЯ РАЗНООБРАЗНЫЕ ЛЕКАРСТВЕННЫЕ ТРАВЫ.</P>
+
+ <P>ДАННЫЙ САД – ЛЮБИМОЕ МЕСТО
+ ПРОГУЛОК МОСКВИЧЕЙ, ЗДЕСЬ МОЖНО ОТДОХНУТЬ, ПОЛЕЖАТЬ НА ТРАВЕ, ПОЧИТАТЬ КНИГУ ИЛИ ПРОСТО ПОДЫШАТЬ ПРЕКРАСНЫМ
+ ВОЗДУХОМ, НАСЫЩЕННЫМ АРОМАТОМ ТРАВ
+
+ </p>
+
+ 
+ </section>
+		
+		
+		<script>
+    $(document).ready(function() {
+        $("#textred a").click(function() {
+            $('section').css('color', '#c42d20');
+        });
+    });
+    </script>
+	<script>
+    $(document).ready(function() {
+        $("#textviolet a").click(function() {
+            $('section').css('color', '#610231');
+        });
+    });
+    </script>
+	<script>
+    $(document).ready(function() {
+        $("#textyellow a").click(function() {
+            $('section').css('color', '#d88a02');
+        });
+    });
+    </script>
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle1.css">
+<title> Голосов овраг </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; </a></li>
+				<li id="textred"> <a href="#"><img src="images/red.png"></a></li>
+		<li id="textviolet"> <a href="#"><img src="images/violet.png"></a></li>
+		<li id="textyellow"> <a href="#"><img src="images/yellow.png"></a><br><br></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/6/3.jpg" width="45%" align="left" vspace="5" hspace="5" >
+В ПАРКЕ «КОЛОМЕНСКОЕ» ЕСТЬ  <b>  ГОЛОСОВ ОВРАГ </b> , КОТОРЫЙ НАХОДИТСЯ ОН ПРИБЛИЗИТЕЛЬНО ПОСЕРЕДИНЕ МУЗЕЯ-ЗАПОВЕДНИКА И ДЕЛИТ ЕГО НА ДВЕ РАВНЫЕ ЧАСТИ, 
+ ИМЕЕТ ДЛИНУ БОЛЕЕ КИЛОМЕТРА И ДОВОЛЬНО КРУТЫЕ СКЛОНЫ.
+   НЫНЕШНЕЕ НАЗВАНИЕ «ГОЛОСОВ» – ПРОИЗВОДНОЕ ОТ ВОЛОСОВ. ТО ЕСТЬ, НАЗВАННЫЙ ПО ИМЕНИ ВОЛОСА 
+   (ВЕЛЕСА) – ЯЗЫЧЕСКОГО СЛАВЯНСКОГО БОГА ПОДЗЕМНОГО ЦАРСТВА И ПОТУСТОРОННЕГО МИРА. КАМНИ В 
+   КОЛОМЕНСКОМ, ЛЕЖАЩИЕ НА ДНЕ, СЛУЖИЛИ ЖЕРТВЕННИКАМИ ЭТОМУ БОЖЕСТВУ. ПРИЧЕМ ДЛЯ РАСПОЛОЖЕНИЯ СВЯТИЛИЩА 
+   ИМЕННО ЗДЕСЬ ЕСТЬ ВСЕ ОСНОВАНИЯ – ПРЯМО ПОД ОВРАГОМ РАСПОЛОЖЕН ОЧЕНЬ ГЛУБОКИЙ ПОДЗЕМНЫЙ РАЗЛОМ, ОБНАРУЖЕНЫ 
+   СЛЕДЫ ДЕЯТЕЛЬНОСТИ ДРЕВНИХ ВУЛКАНОВ.  </p>
+ <p>
+ ИМЯ ВОЛОС ПРОИСХОДИТ ОТ «ВОЛОХАТЫЙ», МОХНАТЫЙ. НАШИ ПРЕДКИ ИЗДРЕВЛЕ ВОЛОСЫ ОТОЖДЕСТВЛЯЛИ С БОГАТСТВОМ, 
+ КАК МАТЕРИАЛЬНЫМ, ТАК И ДУХОВНЫМ, С МУДРОСТЬЮ И С КРЕПКИМ ЗДОРОВЬЕМ. ИСТОРИКИ СЧИТАЮТ, ЧТО ИЗНАЧАЛЬНО ОВРАГ НАЗЫВАЛСЯ «ВОЛОСОВ».
+<P>
+ИЗВЕСТНАЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ ЭТИХ МЕСТ - ДВА ОГРОМНЫХ КАМНЯ В ГЛУБИНЕ ОВРАГА ВЕСОМ ПО НЕСКОЛЬКО ТОНН
+ КАЖДЫЙ. ПРИЧЕМ ОСНОВНАЯ ЧАСТЬ ЭТИХ ВАЛУНОВ НАХОДИТСЯ ПОД ЗЕМЛЁЙ. НА ПОВЕРХНОСТЬ ВЫХОДЯТ НЕБОЛЬШИЕ ВЕРШИНЫ.
+ ИСТОРИЯ ЭТИХ КАМНЕЙ УХОДИТ В ГЛУБЬ ВЕКОВ. ИМ ПОКЛОНЯЛИСЬ ЕЩЁ ЯЗЫЧЕСКИЕ ПЛЕМЕНА, ЖИВШИЕ ЗДЕСЬ ОКОЛО ПОЛУТОРА 
+ ТЫСЯЧЕЛЕТИЙ НАЗАД. ИМЕННО ТОГДА КАМНИ ПОЛУЧИЛИ СВОИ ИМЕНА. </P>
+
+ <P>НИЖНИЙ ИЗ КАМНЕЙ ЛЕЖИТ НА ДНЕ ОВРАГА И НАЗЫВАЕТСЯ «ГУСЬ». СЧИТАЕТСЯ, ЧТО ОН ПОКРОВИТЕЛЬСТВОВАЛ МУЖЧИНАМ, 
+ ДАРУЯ ВОИНАМ СИЛУ И УДАЧУ В БОЮ. ВЕРХНИЙ КАМЕНЬ НАЗЫВАЮТ «ДЕВИЧЬИМ». ПО ПОВЕРЬЯМ ОН ПРИНОСИТ СЧАСТЬЕ ПРЕКРАСНОЙ
+ ПОЛОВИНЕ ЧЕЛОВЕЧЕСТВА. ДЕВИЧИЙ КАМЕНЬ РАСПОЛАГАЕТСЯ НА СКЛОНЕ ХОЛМА И ДЛЯ УДОБСТВА К НЕМУ ПОСТРОЕНА ДЕРЕВЯННАЯ ЛЕСТНИЦА. </p>
+
+
+ 
+ </section>
+		
+		
+		<script>
+    $(document).ready(function() {
+        $("#textred a").click(function() {
+            $('section').css('color', '#c42d20');
+        });
+    });
+    </script>
+	<script>
+    $(document).ready(function() {
+        $("#textviolet a").click(function() {
+            $('section').css('color', '#610231');
+        });
+    });
+    </script>
+	<script>
+    $(document).ready(function() {
+        $("#textyellow a").click(function() {
+            $('section').css('color', '#d88a02');
+        });
+    });
+    </script>
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>

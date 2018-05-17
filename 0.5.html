@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pagestyle1.css">
+<title> Храм Казанской иконы Божией Матери </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div id="slider" class="slider">
+		 <img src="images/slider1.png">
+	</div>
+	
+<div id="allmenu" class="menu">
+	<span class="button"><img src="images/menu.png" width="150px"/></span>
+	<ul class="topmenu"><li>
+			<a id="menu" href="index.html#all" class="scrollto"><br />КАРТА &nbsp; </a>
+	<ul>
+			<li><a id="menu" href="index.html#way1" class="scrollto"> ПУТЬ 1 &nbsp; &nbsp; </a></li>
+			<li><a id="menu" href="index.html#way2" class="scrollto"> ПУТЬ 2 &nbsp;&nbsp; </a></li>
+			<li><a id="menu" href="index.html#way3" class="scrollto"> ПУТЬ 3 &nbsp;&nbsp; </a></li>
+	</ul>
+	</li>
+		<li class="gen"><a id="menu" href="history.html"> ИСТОРИЯ </a> </li>
+		<li class="gen"><a id="menu" href="legends.html"> МИСТИКА </a> </li>
+		<li class="gen"><a id="menu" href="others.html"> ВСЕ КРАСОТЫ &nbsp; </a></li>
+				<li id="textred"> <a href="#"><img src="images/red.png"></a></li>
+		<li id="textviolet"> <a href="#"><img src="images/violet.png"></a></li>
+		<li id="textyellow"> <a href="#"><img src="images/yellow.png"></a><br><br></li>
+	</ul>
+		</div>
+ <section>
+ <p><img src="images/6/5.jpg" width="45%" align="left" vspace="5" hspace="5" >
+ <b>ХРАМ КАЗАНСКОЙ ИКОНЫ БОЖИЕЙ МАТЕРИ </B> В КОЛОМЕНСКОМ — ЕДИНСТВЕННАЯ ПОСТОЯННО ДЕЙСТВУЮЩАЯ ЦЕРКОВЬ В ПАРКЕ 
+ КОЛОМЕНСКОЕ. ЗДАНИЕ ПРЕДСТАВЛЯЕТ СОБОЙ ТИПИЧНЫЙ ОБРАЗЕЦ АРХИТЕКТУРЫ XVII ВЕКА — НА ВЫСОКОМ ПОДКЛЕТЕ, ОКРУЖЕННЫЙ 
+ ГАЛЕРЕЕЙ, С ШАТРОВЫМ КРЫЛЬЦОМ И ШАТРОВОЙ КОЛОКОЛЬНЕЙ.
+ </P>
+   <P>ДЕРЕВЯННЫЙ ХРАМ ВО ИМЯ КАЗАНСКОЙ ИКОНЫ БОЖИЕЙ МАТЕРИ НА ГОСУДАРЕВОМ ДВОРЕ В КОЛОМЕНСКОМ БЫЛ ПОСТРОЕН ПРИ 
+ ЦАРЕ МИХАИЛЕ ФЕДОРОВИЧЕ В 1630-Х ГГ.
+ В 1649 ГОДУ В СВЯЗИ С РОЖДЕНИЕМ НАСЛЕДНИКА ПРЕСТОЛА ДМИТРИЯ АЛЕКСЕЕВИЧА БЫЛО УСТАНОВЛЕНО ОБЩЕЦЕРКОВНОЕ 
+ ПОЧИТАНИЕ КАЗАНСКОЙ ИКОНЫ БОЖИЕЙ МАТЕРИ. ТОГДА ЖЕ БЫЛИ ЗАЛОЖЕНЫ КАМЕННЫЕ КАЗАНСКИЕ ЦЕРКВИ В ЯРОСЛАВСКОМ 
+ КАЗАНСКОМ МОНАСТЫРЕ И ПРИ ЦАРСКОМ КОЛОМЕНСКОМ ДВОРЦЕ. СТРОИТЕЛЬСТВО СУЩЕСТВУЮЩЕГО В КОЛОМЕНСКОМ КИРПИЧНОГО ЗДАНИЯ 
+ НА ВЫСОКОМ ПОДКЛЕТЕ С ШАТРОВОЙ КОЛОКОЛЬНЕЙ БЫЛО ЗАВЕРШЕНО ЗА ЧЕТЫРЕ ГОДА
+ В 1651 Г. ВЗАМЕН ДЕРЕВЯННОГО БЫЛО ПОСТРОЕНО НЫНЕ СУЩЕСТВУЮЩЕЕ КИРПИЧНОЕ ЗДАНИЕ ХРАМА. </P>
+
+ <P>ХРАМ ПОСВЯЩЕН ОДНОЙ ИЗ НАИБОЛЕЕ ПОЧИТАЕМЫХ В РОССИИ ИКОН БОГОМАТЕРИ – КАЗАНСКОЙ, С ЧУДЕСНЫМ ЗАСТУПНИЧЕСТВОМ 
+КОТОРОЙ СВЯЗЫВАЛИ СВОЕ ИЗБРАНИЕ НА ЦАРСТВО ГОСУДАРИ ИЗ РОДА РОМАНОВЫХ. </P>
+РАСПОЛОЖЕННЫЙ В ЦЕНТРЕ ГОСУДАРЕВА ДВОРА ХРАМ СЛУЖИЛ ДОМОВОЙ, СЕМЕЙНОЙ ЦЕРКОВЬЮ ДЛЯ ЖИВШИХ ЗДЕСЬ ЦАРСТВЕННЫХ ОСОБ. </P>
+
+ <P>С БОЛЬШИМ ДЕРЕВЯННЫМ ДВОРЦОМ ЦАРЯ АЛЕКСЕЯ МИХАЙЛОВИЧА, ПОСТРОЕННОМ В 1667 ГОДУ, ХРАМ СОЕДИНЯЛСЯ ЗАКРЫТОЙ ГАЛЕРЕЕЙ-ПЕРЕХОДОМ. 
+С ПЕРЕНОСОМ ЦАРСКОГО ДВОРЦА НА НОВОЕ МЕСТО В 60-Е ГОДЫ XVIII ВЕКА ЦЕРКОВЬ СТАНОВИТСЯ ПРИХОДСКИМ ХРАМОМ КОЛОМЕНСКОГО.
+В НАСТОЯЩЕЕ ВРЕМЯ В ХРАМЕ КАЗАНСКОЙ ИКОНЫ БОЖИЕЙ МАТЕРИ КРУГЛОГОДИЧНО ПРОВОДЯТСЯ СЛУЖБЫ. </p>
+
+<p>
+
+
+
+ 
+ </section>
+		
+		
+		<script>
+    $(document).ready(function() {
+        $("#textred a").click(function() {
+            $('section').css('color', '#c42d20');
+        });
+    });
+    </script>
+	<script>
+    $(document).ready(function() {
+        $("#textviolet a").click(function() {
+            $('section').css('color', '#610231');
+        });
+    });
+    </script>
+	<script>
+    $(document).ready(function() {
+        $("#textyellow a").click(function() {
+            $('section').css('color', '#d88a02');
+        });
+    });
+    </script>
+		
+		
+		
+		<script>
+var sliderElem = document.getElementById('slider');
+    var innerHeight = document.documentElement.clientHeight;
+sliderElem.onclick = function() {
+window.scrollBy(0, window.innerHeight);
+      }
+</script>
+
+<script>
+$(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+<script>
+	var menuElem = document.getElementById('allmenu');
+	var titleElem = menuElem.querySelector('.button');
+	titleElem.onclick = function() {
+		menuElem.classList.toggle('open');
+	};
+</script>
+</body>
+</html>
